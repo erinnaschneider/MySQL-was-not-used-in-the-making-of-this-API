@@ -1,0 +1,23 @@
+{
+  "name": "mysql-was-not-used-in-the-making-of-this-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinnaschneider/MySQL-was-not-used-in-the-making-of-this-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erinnaschneider/MySQL-was-not-used-in-the-making-of-this-API/issues"
+  },
+  "homepage": "https://github.com/erinnaschneider/MySQL-was-not-used-in-the-making-of-this-API#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1"
+  }
+}
