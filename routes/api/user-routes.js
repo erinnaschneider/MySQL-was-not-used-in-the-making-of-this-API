@@ -16,14 +16,14 @@ router
   .get(getAllUsers)
   .post(addUser);
 
-// routes at /api/users/:id
+// routes by id
 router
   .route('/:id')
   .get(getUserById)
   .put(updateUser)
   .delete(deleteUser)
 
-// routes at /api/users/:userId/friends/:friendId
+// routes by /api/users/:userId/friends/:friendId
 router
   .route('/:userId/friends/:friendId')
   .post(addUserFriend)

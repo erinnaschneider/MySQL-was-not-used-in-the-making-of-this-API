@@ -16,23 +16,23 @@ router
   .get(getAllThoughts)
   .post(addThought);
 
-// routes at /api/thoughts/:id
+// routes by id
 router
   .route('/:id')
   .get(getThoughtById)
   .put(updateThought);
 
-// routes at /api/thoughts/:userId/:thoughtId
+// routes by /api/thoughts/:userId/:thoughtId
 router
   .route('/:userId/:thoughtId')
   .delete(removeThought);
 
-// routes at /api/thoughts/:thoughtId/reactions
+// routes by /api/thoughts/:thoughtId/reactions
 router
   .route('/:thoughtId/reactions')
   .post(addReaction);
 
-// routes at /api/thoughts/:thoughtId/reactions/:reactionId
+// routes by /api/thoughts/:thoughtId/reactions/:reactionId
 router
   .route('/:thoughtId/reactions/:reactionId')
   .delete(removeReaction);
