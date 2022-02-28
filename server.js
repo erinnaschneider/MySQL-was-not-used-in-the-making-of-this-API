@@ -8,8 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/MySQL-was-not-used-in-the-making-of-this-API', {
-  useFindAndModify: false,
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/userdb', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
